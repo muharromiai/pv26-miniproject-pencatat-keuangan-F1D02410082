@@ -1,0 +1,101 @@
+QWidget {
+    color: #333333;
+}
+
+QMainWindow, QDialog {
+    background-color: #f5f5f5;
+}
+
+QPushButton {
+    background-color: #5b3a9e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #7e57c2;
+}
+
+QPushButton:disabled {
+    background-color: #cccccc;
+    color: #888888;
+}
+
+QPushButton#btnDelete {
+    background-color: #c0392b;
+}
+
+QPushButton#btnCancel {
+    background-color: transparent;
+    color: #555555;
+    border: 1px solid #cccccc;
+}
+
+QLineEdit, QComboBox, QDateEdit, QDoubleSpinBox {
+    background-color: white;
+    color: #333333;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+QTableWidget {
+    background-color: white;
+    color: #333333;
+    alternate-background-color: #fafafa;
+    border: 1px solid #dddddd;
+    selection-background-color: #e8e0f0;
+}
+
+QHeaderView::section {
+    background-color: #f0f0f0;
+    color: #333333;
+    border: none;
+    border-bottom: 2px solid #5b3a9e;
+    padding: 6px 10px;
+    font-weight: bold;
+}
+
+QLabel#appTitle {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #5b3a9e;
+}
+
+QLabel#appSubtitle,
+QLabel#studentNim,
+QLabel[class="cardTitle"] {
+    color: #888888;
+}
+
+QLabel#studentName {
+    font-weight: bold;
+    color: #5b3a9e;
+}
+
+QLabel#dialogHeader {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #5b3a9e;
+}
+
+QFrame[class="summaryCard"] {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}
+
+QFrame#cardPemasukan { border-left: 3px solid #27ae60; }
+QFrame#cardPengeluaran { border-left: 3px solid #e74c3c; }
+QFrame#cardSaldo { border-left: 3px solid #2980b9; }
+
+QLabel[class="cardValue"] {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+QFrame#cardPemasukan QLabel[class="cardValue"] { color: #27ae60; }
+QFrame#cardPengeluaran QLabel[class="cardValue"] { color: #e74c3c; }
+QFrame#cardSaldo QLabel[class="cardValue"] { color: #2980b9; }
